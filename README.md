@@ -1,24 +1,38 @@
-# movielib
+# movieDB-frontend
+Site is deployed on aws
+[Website](http://43.204.81.46/#/home)
 
-## Project setup
+## How to install
 ```
+git clone https://github.com/userid007/movieDB-frontend.git
+cd movieDB-frontend/
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+###  Environment Variable
+Update .env file api address with your backend address
 
-### Compiles and minifies for production
-```
-npm run build
-```
+***Registration Page***
 
-### Lints and fixes files
-```
-npm run lint
-```
+![Registration Page](<screenshots/register.png> "Register")
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+***Login Page***
+
+![Login Page](<screenshots/login.png> "Login")
+
+***Home Page***
+
+#### In home page we can search and add movie to playlist
+![Home Page](<screenshots/home.png> "Home")
+
+![Search Page](<screenshots/search.png> "Search")
+
+***Create Playlist***
+
+![Crate Page](<screenshots/create.png> "Create")
+
+***Playlist***
+
+![Private Page](<screenshots/private.png> "Private")
+
+![Public Page](<screenshots/public.png> "Public")
