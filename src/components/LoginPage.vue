@@ -43,7 +43,7 @@ export default {
     login(e) {
       const self = this;
       axios
-        .post("http://localhost:8000/api/v1/auth/login", {
+        .post(`${process.env.VUE_APP_API}/api/v1/auth/login`, {
           username: e.target[0].value,
           password: e.target[1].value,
         })

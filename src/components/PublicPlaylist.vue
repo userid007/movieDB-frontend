@@ -32,7 +32,7 @@ export default {
   created() {
     const self = this;
     axios
-      .get("http://localhost:8000/api/v1/playlist/public", {
+      .get(`${process.env.VUE_APP_API}/api/v1/playlist/public`, {
         headers: {
           authorization: localStorage.getItem("accessToken"),
         },

@@ -33,7 +33,7 @@ export default {
     this.isloggedin();
     const self = this;
     axios
-      .get(`http://localhost:8000/api/v1/playlist/private`, {
+      .get(`${process.env.VUE_APP_API}/api/v1/playlist/private`, {
         headers: {
           authorization: localStorage.getItem("accessToken"),
         },

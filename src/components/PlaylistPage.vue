@@ -37,9 +37,9 @@ export default {
     var url = "";
     console.log(self.type);
     if (self.type === "private") {
-      url = `http://localhost:8000/api/v1/playlist/privatelist/${self.playlistId}`;
+      url = `${process.env.VUE_APP_API}/api/v1/playlist/privatelist/${self.playlistId}`;
     } else if (self.type === "public") {
-      url = `http://localhost:8000/api/v1/public/playlist/${self.playlistId}`;
+      url = `${process.env.VUE_APP_API}/api/v1/public/playlist/${self.playlistId}`;
     }
 
     axios
@@ -52,7 +52,9 @@ export default {
         console.log(response.data.data);
         for (const id of response.data.data.moviesId) {
           axios
-            .get(`http://www.omdbapi.com/?apikey=4392338a&i=${id}`)
+            .get(
+              `http://www.omdbapi.com/?apikey=${process.env.VUE_APP_OMDBAPIKEY}&i=${id}`
+            )
             .then(function (response) {
               console.log(response);
               self.moviesList.push(response.data);

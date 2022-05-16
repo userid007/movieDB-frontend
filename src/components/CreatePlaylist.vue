@@ -45,7 +45,7 @@ export default {
       const self = this;
       axios
         .post(
-          "http://localhost:8000/api/v1/playlist/create",
+          `${process.env.VUE_APP_API}/api/v1/playlist/create`,
           {
             name: e.target[0].value,
             isPrivate: self.isPrivate,

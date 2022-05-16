@@ -103,7 +103,7 @@ export default {
     getPlaylist() {
       const self = this;
       axios
-        .get("http://localhost:8000/api/v1/playlist/private", {
+        .get(`${process.env.VUE_APP_API}/api/v1/playlist/private`, {
           headers: {
             authorization: localStorage.getItem("accessToken"),
           },
@@ -122,7 +122,7 @@ export default {
       console.log(this.minfo.Title);
       axios
         .put(
-          "http://localhost:8000/api/v1/playlist/update",
+          `${process.env.VUE_APP_API}/api/v1/playlist/update`,
           { movieListId: id, movieId: this.minfo.imdbID },
           {
             headers: {
