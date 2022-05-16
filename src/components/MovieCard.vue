@@ -94,7 +94,9 @@ export default {
     };
   },
   created() {
-    this.getPlaylist();
+    if (this.show) {
+      this.getPlaylist();
+    }
   },
   methods: {
     tocreate() {

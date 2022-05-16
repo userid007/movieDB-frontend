@@ -26,17 +26,13 @@ export default {
   data() {
     return {
       playlists: [],
-      type: "private",
+      type: "public",
     };
   },
   created() {
     const self = this;
     axios
-      .get(`${process.env.VUE_APP_API}/api/v1/playlist/public`, {
-        headers: {
-          authorization: localStorage.getItem("accessToken"),
-        },
-      })
+      .get(`${process.env.VUE_APP_API}/api/v1/playlist/public`)
       .then(function (response) {
         console.log(response.data.data);
         self.playlists = response.data.data;
