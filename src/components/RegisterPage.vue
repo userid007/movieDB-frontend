@@ -52,7 +52,7 @@ export default {
         self.msg = "Comfirm password shoud match";
       } else {
         axios
-          .post(`${process.env.VUE_APP_API}api/v1/auth/register`, {
+          .post(`${process.env.VUE_APP_API}/api/v1/auth/register`, {
             username: e.target[0].value,
             password: e.target[1].value,
           })
