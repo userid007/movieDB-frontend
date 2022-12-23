@@ -1,7 +1,7 @@
 <template>
   <div class="list-group pt-3" @click="getPlaylist">
     <div class="card">
-      <div class="card-body">
+      <div class="card-body" style="font-weight: 900">
         <h3 class="mb-1">{{ pinfo.name }}</h3>
       </div>
     </div>
@@ -9,9 +9,9 @@
     <div class="list-group-item">
       <div class="d-flex justify-content-between">
         <div>
-          <h6 class="text-muted">{{ pinfo.type }}</h6>
-          <h6 class="text-muted">Created by : {{ pinfo.username }}</h6>
-          <h6 class="text-muted">Creation Time : {{ pinfo.createdAt }}</h6>
+          <h6 class="text-dark">{{ pinfo.type }}</h6>
+          <h6 class="text-dark">Created by : {{ pinfo.username }}</h6>
+          <h6 class="text-dark">Creation Time : {{ pinfo.createdAt }}</h6>
         </div>
       </div>
     </div>

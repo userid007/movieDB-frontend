@@ -5,7 +5,7 @@ import LoginPage from '../components/LoginPage.vue'
 import LogoutPage from '../components/LogoutPage.vue'
 import RegisterPage from '../components/RegisterPage.vue'
 import PublicPlaylist from '../components/PublicPlaylist.vue'
-import PrivatePlaylist from '../components/PrivatePlaylist.vue'
+import PrivatePlaylist from '../components/MyPlaylist.vue'
 import CreatePlaylist from '../components/CreatePlaylist.vue'
 import PlaylistPage from '../components/PlaylistPage.vue'
 Vue.use(VueRouter)

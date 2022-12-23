@@ -78,12 +78,15 @@ export default {
     align-items: center;
     width: 50%;
     margin-bottom: 2rem;
+    margin-top: 1rem;
     input {
       width: 90%;
+      border-radius: 50px;
       padding: 1rem;
     }
     button {
       margin: 2rem 1rem 0.5rem 1rem;
+      border-radius: 100%;
     }
   }
 }

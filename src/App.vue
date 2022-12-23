@@ -32,7 +32,7 @@
             </li>
             <li class="nav-item">
               <router-link class="nav-link" aria-current="page" to="/private"
-                >Private Playlist</router-link
+                >My Playlist</router-link
               >
             </li>
             <li class="nav-item">
@@ -89,6 +89,7 @@ export default {
     };
   },
   beforeMount() {
+    console.log(localStorage.getItem("accessToken"));
     if (localStorage.getItem("accessToken")) {
       this.loggedin = true;
     } else {
@@ -105,12 +106,19 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100%;
+  min-height: 100vh;
 }
 
 nav {
   padding: 30px;
+  background: rgb(255, 221, 152);
+  border-bottom: 1px solid grey;
+  border-radius: 0px 0px 6px 6px;
 }
-
+.nav-link {
+  color: black;
+}
 nav a {
   font-weight: bold;
   color: #2c3e50;
