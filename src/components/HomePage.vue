@@ -48,7 +48,7 @@ export default {
       const self = this;
       axios
         .get(
-          `http://www.omdbapi.com/?apikey=${process.env.VUE_APP_OMDBAPIKEY}&s=${this.movieName}`
+          `https://www.omdbapi.com/?apikey=${process.env.VUE_APP_OMDBAPIKEY}&s=${this.movieName}`
         )
         .then(function (response) {
           console.log(response);

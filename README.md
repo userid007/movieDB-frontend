@@ -1,6 +1,6 @@
 # movieDB-frontend
-Site is deployed on aws
-[Website](http://35.239.249.194/#/home)
+Site is deployed on cyclic.sh
+[Website](https://cute-pink-moth-tux.cyclic.app/#/home)
 
 ## How to install
 ```

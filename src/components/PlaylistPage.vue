@@ -53,7 +53,7 @@ export default {
         for (const id of response.data.data.moviesId) {
           axios
             .get(
-              `http://www.omdbapi.com/?apikey=${process.env.VUE_APP_OMDBAPIKEY}&i=${id}`
+              `https://www.omdbapi.com/?apikey=${process.env.VUE_APP_OMDBAPIKEY}&i=${id}`
             )
             .then(function (response) {
               console.log(response);
